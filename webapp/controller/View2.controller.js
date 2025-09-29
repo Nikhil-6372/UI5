@@ -5,6 +5,9 @@ sap.ui.define([
 
     return Controller.extend("com.demo.myhandson07.controller.View2", {
         onInit() {
+        },
+        Back: function(){
+            this.getOwnerComponent().getRouter().navTo("RouteView1")
         }
     });
 });

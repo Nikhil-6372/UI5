@@ -2,5 +2,8 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Page id="page" title="I am View2">
+        <content>
+            <Button text="BackToV1" press="Back"/>
+        </content>
     </Page>
 </mvc:View>  
