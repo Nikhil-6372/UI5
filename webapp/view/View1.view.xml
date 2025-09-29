@@ -1,0 +1,9 @@
+<mvc:View controllerName="com.demo.myhandson07.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="I am View1">
+        <content>
+            <Button text="GOTO2ndVIEW" press="onPress" />
+        </content>
+    </Page>
+</mvc:View>  
