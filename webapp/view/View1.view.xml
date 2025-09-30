@@ -3,7 +3,31 @@
     xmlns="sap.m">
     <Page id="page" title="I am View1">
         <content>
-            <Button text="GOTO2ndVIEW" press="onPress" />
+            <!-- <Button text="GOTO2ndVIEW" press="onPress" /> -->
+            <Text text ="WELCOME TO SAP UI5" class="sapMH3FontSize" textAlign="Center" width="100%"/>
+            <!-- Class Varies from sapMH1FontSize ..varries from 1...to ...6 (For font size without css) -->
+            <Label text= "Enter Your Name:"  class="sapUiMediumMarginBegin"/>
+            <!-- Margin Concept - size- Tiny,small,Medium,Large -->
+                           <!-- - Direction - Begin,Top,End,Bottom -->
+            <Input width="15%" class="sapUiSmallMarginBegin" maxLength="15" placeholder="enter name here" />
+            <!-- <Label text="Age" class="sapUiMediumMarginEnd" /> -->
+                <Button text="Submit" class="sapUiSmallMarginBegin" type="Emphasized"/>
+                <!-- Button color - Emphasized , Success or Accept,Reject -->
         </content>
+        <footer>
+            <Bar>
+                <contentLeft>
+                    <Button text="Left" type="Success"/>
+                </contentLeft>
+                <!-- footer buttons -->
+                 <contentMiddle>
+                    <Button text="Middle" type="Reject"/>
+                </contentMiddle>
+                 <contentRight>
+                    <Button text="Right" type="Emphasized"/>
+                </contentRight>
+                
+            </Bar>
+        </footer>
     </Page>
 </mvc:View>  
