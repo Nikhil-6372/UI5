@@ -1,7 +1,9 @@
 <mvc:View controllerName="com.demo.myhandson07.controller.View1"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m" 
-    xmlns:l="sap.ui.layout">
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core">
     <Page id="page" title="I am View1">
         <content>
             <!-- <Button text="GOTO2ndVIEW" press="onPress" /> -->
@@ -14,8 +16,12 @@
             <!-- <Label text="Age" class="sapUiMediumMarginEnd" /> -->
                 <!-- <Button text="Submit" class="sapUiSmallMarginBegin" type="Emphasized"/> -->
                 <!-- Button color - Emphasized , Success or Accept,Reject -->
+
+                                    <!-- GRID LAYOUT -->
+                            <!-- LIBRERY= (xmlns:l="sap.ui.layout") -->
                 <!-- Grid layout starts from here(FOR COMPLEX SCREEN)(Having all types of grid) -->
-            <Panel headerText="Employee Information" expandable="true" expanded="true">
+
+            <!-- <Panel headerText="Employee Information" expandable="true" expanded="true">
                 <l:Grid defaultSpan="L3 M3" vSpacing="0">
                     <l:content>
                         <Label text="Employee Id" class="sapUiTinyMarginTop" />
@@ -101,7 +107,7 @@
             </Panel>
             <Panel headerText="Employee Profile" expandable="true" expanded="true">
                 <l:Grid defaultSpan="L2 M2" vSpacing="0">
-                    <Label text="Employee Id" />
+                        <Label text="Employee Id" />
                         <Input></Input>
                         <Label text="Employee Name" class="sapUiTinyMarginTop" />
                         <Input></Input>
@@ -114,7 +120,64 @@
                         <Label text="Employee Phone no." class="sapUiTinyMarginTop" />
                         <Input></Input>
                 </l:Grid>
-            </Panel>
+            </Panel> -->
+
+                                    <!-- SIMPLEFORM LAYOUT -->
+                            <!-- LIBRERY=( xmlns:f="sap.ui.layout.form") -->
+            <!-- (Simple form layout starts from here) -->
+
+            <!-- (lableSpan ===> no. of grids to be allocated for the lable from L.H.S of the screen) -->
+
+            <!-- (emptySpan ===> no. of grids to be left empty from R.H.S of the screen) -->
+
+                    <!-- (BASIC) -->
+            <!-- <f:SimpleForm title="Simple form layout Example" editable="true" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3"
+            emptySpanL="4" emptySpanM="4">
+                <f:content>
+                    <Label text="Employee Id" />
+                    <Input></Input>
+                    <Label text="Employee Name"  />
+                    <Input></Input>
+                    <Label text="Employee Designation"  />
+                    <Input></Input>
+                    <Label text="Employee Skill"  />
+                    <Input></Input>
+                    <Label text="Employee Email Id"  />
+                    <Input></Input>
+                    <Label text="Employee Phone no."  />
+                    <Input></Input>
+                </f:content>
+            </f:SimpleForm> -->
+
+                    <!-- (REAL SIMPLEFORM FOR GROUPING CONCEPT) -->
+
+                    <!-- FIRST RULE IS MAKE YOUR EMPTY SPAN "0"  -->
+                    <!-- PUT LIBRARY=(xlmns:core="sap.ui.core") -->
+
+            <f:SimpleForm title="Simple form layout Example" editable="true" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3"
+            emptySpanL="0" emptySpanM="0">
+                <f:content>
+                    <core:Title text="EMP INFO" />
+                    <Label text="Employee Id" />
+                    <Input></Input>
+                    <Label text="Employee Name"  />
+                    <Input></Input>
+                    <Label text="Employee Designation"  />
+                    <Input></Input>
+                    <core:Title text="EMP EDU" />
+                    <Label text="Employee Skill"  />
+                    <Input></Input>
+                    <Label text="Employee Email Id"  />
+                    <Input></Input>
+                    <core:Title text="EMP GOAL" />
+                    <Label text="Employee Phone no."  />
+                    <Input></Input>
+                    <Label text="Employee Email Id"  />
+                    <Input></Input>
+                    <Label text="Employee Phone no."  />
+                    <Input></Input>
+                </f:content>
+            </f:SimpleForm>       
         </content>
         <footer>
             <Bar>
