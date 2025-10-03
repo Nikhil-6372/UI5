@@ -235,11 +235,29 @@
                     </IconTabFilter>
                 </items>
             </IconTabBar> -->
+
+
+                        <!-- VALIDATION(Mandatory Feild) -->
+
+            <f:SimpleForm editable="true" title="MY Details" layout="ResponsiveGridLayout" labelSpanL="2" LabelSpanM="2"
+            emptySpanL="5" emptySpanM="5">
+                <f:content>
+                    <Label text="MI ID:" required="true"/>
+                    <Input id="idEmpId"/>
+                    <Label text="NAME:" required="true"/>
+                    <Input id="idName"/>
+                    <Label text="E-MAIL:" required="true"/>
+                    <Input id="idEmail"/>
+                    <Label text="Nationality" required="true" />
+                    <Input/>
+                </f:content>
+            </f:SimpleForm>
         </content>
         <footer>
             <Bar>
                 <!-- footer buttons -->
-                <contentLeft>
+
+                <!-- <contentLeft>
                     <Button text="Left" type="Success"/>
                 </contentLeft>
                  <contentMiddle>
@@ -247,8 +265,10 @@
                 </contentMiddle>
                  <contentRight>
                     <Button text="Right" type="Emphasized"/>
+                </contentRight> -->
+                <contentRight>
+                    <Button text="Submit" type="Accept" press="onSubmit"/>
                 </contentRight>
-                
             </Bar>
         </footer>
     </Page>
