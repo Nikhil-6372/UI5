@@ -194,12 +194,47 @@
             </HBox> -->
 
                             <!-- FLEXBOX  -->
-                <!-- IF YOU WANT ANY ELEMENT (S) AT THE BEGIN OR CENTER OR END OF THE LINE USE FLEXBOX         -->
-             
-             <FlexBox justifyContent="End">
-                <Button text="Go" type="Accept" class="sapUiTinyMarginEnd" />
-                <Button text="ReSet" type="Reject" />
-             </FlexBox>
+                <!-- IF YOU WANT ANY ELEMENT (S) AT THE BEGIN OR CENTER OR END OF THE LINE USE FLEXBOX-->
+                            <!-- go to icon explorer in google for more icons -->
+
+             <!-- <FlexBox justifyContent="End">
+                <Button icon="sap-icon://accept" text="Go" type="Accept" class="sapUiTinyMarginEnd" />
+                <Button icon="sap-icon://reset" text="Reset" type="Reject" />
+             </FlexBox> -->
+
+                            <!-- OBJECT HEADER -->
+
+            <!-- <ObjectHeader icon="sap-icon://employee" title="NIKHIL" number="1200000" numberUnit="INR" backgroundDesign="Solid">
+                <attributes>
+                    <ObjectAttribute text="10001" ></ObjectAttribute>
+                    <ObjectAttribute text="Developer" ></ObjectAttribute>
+                </attributes>
+
+                <statuses>
+                    <ObjectStatus text="PERMINANT" state="Success"/>
+                </statuses>
+            </ObjectHeader> -->
+
+                            <!-- ICONTAbBAR -->
+
+            <!-- <IconTabBar>
+                <items>
+                    <IconTabFilter icon="sap-icon://information">
+                        <f:SimpleForm editable="false">
+                            <f:content>
+                                <Label text="EMP ID:" />
+                                <Text text ="10001" />
+                                <Label text="EMP NAME" />
+                                <Text text="Nikhil Moharana" />
+                                <Label text="DEGIGNATION" />
+                                <Text text="DEVELOPER" />
+                            </f:content>
+
+                        </f:SimpleForm>
+
+                    </IconTabFilter>
+                </items>
+            </IconTabBar> -->
         </content>
         <footer>
             <Bar>
