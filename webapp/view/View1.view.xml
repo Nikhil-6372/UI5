@@ -154,7 +154,7 @@
                     <!-- FIRST RULE IS MAKE YOUR EMPTY SPAN "0"  -->
                     <!-- PUT LIBRARY=(xlmns:core="sap.ui.core") -->
 
-            <f:SimpleForm title="Simple form layout Example" editable="true" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3"
+            <!-- <f:SimpleForm title="Simple form layout Example" editable="true" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3"
             emptySpanL="0" emptySpanM="0">
                 <f:content>
                     <core:Title text="EMP INFO" />
@@ -177,7 +177,29 @@
                     <Label text="Employee Phone no."  />
                     <Input></Input>
                 </f:content>
-            </f:SimpleForm>       
+            </f:SimpleForm>        -->
+
+                    <!-- VBOX & HBOX SYNTAX -->
+            <!-- <HBox>
+                <VBox>
+                    <Label text="employee BTN"/>
+                    <Input></Input>
+                </VBox>
+            </HBox>
+            <HBox>
+                <VBox>
+                    <Label text="Student BTN" />
+                    <Input></Input>
+                </VBox>
+            </HBox> -->
+
+                            <!-- FLEXBOX  -->
+                <!-- IF YOU WANT ANY ELEMENT (S) AT THE BEGIN OR CENTER OR END OF THE LINE USE FLEXBOX         -->
+             
+             <FlexBox justifyContent="End">
+                <Button text="Go" type="Accept" class="sapUiTinyMarginEnd" />
+                <Button text="ReSet" type="Reject" />
+             </FlexBox>
         </content>
         <footer>
             <Bar>
